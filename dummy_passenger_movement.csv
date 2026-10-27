@@ -1,0 +1,301 @@
+aircraft_id,manufacturer,model,wingspan_m,length_m,gate,scheduled_landing,scheduled_departure,maximum_seating_capacity,OD,TT,capacity_basis
+A55,Airbus,A380-800,79.75,72.72,Gate 7,0357H,0557H,471,325,6,SIA A380-800 cabin configuration (471 seats)
+A222,Boeing,B737 MAX,35.90,39.52,Gate 21,0759H,0959H,189,121,12,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A8,Airbus,A380-800,79.75,72.72,Gate 10,0826H,1026H,471,397,48,SIA A380-800 cabin configuration (471 seats)
+A179,Airbus,A350-1000,64.75,73.78,Gate 20,0810H,1010H,303,228,12,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A98,Boeing,B777-9,71.80,76.70,Gate 25,0111H,0311H,264,190,3,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A66,Boeing,B777-9,71.80,76.70,Gate 37,1730H,1930H,264,136,31,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A128,Airbus,A350-1000,64.75,73.78,Gate 24,0031H,0231H,303,188,53,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A278,Airbus,A321NEO,35.80,44.51,Gate 11,1443H,1643H,236,211,5,"Scoot A321neo configuration (236 seats, SIA Group)"
+A38,Airbus,A380-800,79.75,72.72,Gate 2,1531H,1731H,471,219,93,SIA A380-800 cabin configuration (471 seats)
+A57,Airbus,A380-800,79.75,72.72,Gate 2,0809H,1009H,471,343,59,SIA A380-800 cabin configuration (471 seats)
+A104,Boeing,B777-9,71.80,76.70,Gate 22,0941H,1141H,264,200,63,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A229,Boeing,B737 MAX,35.90,39.52,Gate 28,1713H,1913H,189,127,16,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A116,Boeing,B777-9,71.80,76.70,Gate 38,2220H,0020H,264,191,22,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A129,Airbus,A350-1000,64.75,73.78,Gate 39,0952H,1152H,303,151,62,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A154,Airbus,A350-1000,64.75,73.78,Gate 13,0724H,0924H,303,246,41,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A52,Airbus,A380-800,79.75,72.72,Gate 1,0234H,0434H,471,363,33,SIA A380-800 cabin configuration (471 seats)
+A30,Airbus,A380-800,79.75,72.72,Gate 10,0125H,0325H,471,311,47,SIA A380-800 cabin configuration (471 seats)
+A245,Airbus,A321NEO,35.80,44.51,Gate 23,1503H,1703H,236,175,11,"Scoot A321neo configuration (236 seats, SIA Group)"
+A238,Boeing,B737 MAX,35.90,39.52,Gate 40,1136H,1336H,189,111,7,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A292,Airbus,A321NEO,35.80,44.51,Gate 36,0826H,1026H,236,203,27,"Scoot A321neo configuration (236 seats, SIA Group)"
+A139,Airbus,A350-1000,64.75,73.78,Gate 28,1847H,2047H,303,183,39,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A173,Airbus,A350-1000,64.75,73.78,Gate 29,0119H,0319H,303,178,82,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A203,Boeing,B737 MAX,35.90,39.52,Gate 34,2201H,0001H,189,162,24,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A78,Boeing,B777-9,71.80,76.70,Gate 39,1114H,1314H,264,188,10,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A150,Airbus,A350-1000,64.75,73.78,Gate 25,1937H,2137H,303,207,19,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A43,Airbus,A380-800,79.75,72.72,Gate 5,1328H,1528H,471,327,99,SIA A380-800 cabin configuration (471 seats)
+A32,Airbus,A380-800,79.75,72.72,Gate 1,0526H,0726H,471,281,93,SIA A380-800 cabin configuration (471 seats)
+A137,Airbus,A350-1000,64.75,73.78,Gate 20,1918H,2118H,303,204,74,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A295,Airbus,A321NEO,35.80,44.51,Gate 24,1317H,1517H,236,134,24,"Scoot A321neo configuration (236 seats, SIA Group)"
+A72,Boeing,B777-9,71.80,76.70,Gate 36,1239H,1439H,264,160,76,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A130,Airbus,A350-1000,64.75,73.78,Gate 38,1838H,2038H,303,186,92,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A176,Airbus,A350-1000,64.75,73.78,Gate 15,0414H,0614H,303,221,49,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A260,Airbus,A321NEO,35.80,44.51,Gate 25,0458H,0658H,236,186,41,"Scoot A321neo configuration (236 seats, SIA Group)"
+A190,Boeing,B737 MAX,35.90,39.52,Gate 38,2042H,2242H,189,135,27,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A268,Airbus,A321NEO,35.80,44.51,Gate 30,1201H,1401H,236,190,36,"Scoot A321neo configuration (236 seats, SIA Group)"
+A175,Airbus,A350-1000,64.75,73.78,Gate 23,1841H,2041H,303,247,18,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A224,Boeing,B737 MAX,35.90,39.52,Gate 21,1539H,1739H,189,106,15,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A69,Boeing,B777-9,71.80,76.70,Gate 11,0038H,0238H,264,147,65,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A123,Airbus,A350-1000,64.75,73.78,Gate 17,2358H,0158H,303,247,43,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A281,Airbus,A321NEO,35.80,44.51,Gate 22,2043H,2243H,236,159,25,"Scoot A321neo configuration (236 seats, SIA Group)"
+A164,Airbus,A350-1000,64.75,73.78,Gate 12,0246H,0446H,303,259,7,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A160,Airbus,A350-1000,64.75,73.78,Gate 27,1103H,1303H,303,174,81,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A49,Airbus,A380-800,79.75,72.72,Gate 7,0620H,0820H,471,410,15,SIA A380-800 cabin configuration (471 seats)
+A289,Airbus,A321NEO,35.80,44.51,Gate 26,0104H,0304H,236,173,1,"Scoot A321neo configuration (236 seats, SIA Group)"
+A77,Boeing,B777-9,71.80,76.70,Gate 35,0259H,0459H,264,208,16,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A228,Boeing,B737 MAX,35.90,39.52,Gate 13,1422H,1622H,189,170,16,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A41,Airbus,A380-800,79.75,72.72,Gate 2,1244H,1444H,471,316,38,SIA A380-800 cabin configuration (471 seats)
+A244,Airbus,A321NEO,35.80,44.51,Gate 25,0345H,0545H,236,196,24,"Scoot A321neo configuration (236 seats, SIA Group)"
+A82,Boeing,B777-9,71.80,76.70,Gate 13,0726H,0926H,264,170,28,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A165,Airbus,A350-1000,64.75,73.78,Gate 26,1005H,1205H,303,166,81,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A146,Airbus,A350-1000,64.75,73.78,Gate 19,0935H,1135H,303,130,68,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A213,Boeing,B737 MAX,35.90,39.52,Gate 33,0701H,0901H,189,105,53,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A231,Boeing,B737 MAX,35.90,39.52,Gate 18,1902H,2102H,189,142,43,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A108,Boeing,B777-9,71.80,76.70,Gate 28,1801H,2001H,264,162,51,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A112,Boeing,B777-9,71.80,76.70,Gate 26,0953H,1153H,264,203,51,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A122,Airbus,A350-1000,64.75,73.78,Gate 11,1630H,1830H,303,233,43,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A230,Boeing,B737 MAX,35.90,39.52,Gate 24,0953H,1153H,189,106,25,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A250,Airbus,A321NEO,35.80,44.51,Gate 32,0017H,0217H,236,154,36,"Scoot A321neo configuration (236 seats, SIA Group)"
+A46,Airbus,A380-800,79.75,72.72,Gate 8,1845H,2045H,471,287,130,SIA A380-800 cabin configuration (471 seats)
+A29,Airbus,A380-800,79.75,72.72,Gate 6,0337H,0537H,471,294,133,SIA A380-800 cabin configuration (471 seats)
+A288,Airbus,A321NEO,35.80,44.51,Gate 40,1704H,1904H,236,142,4,"Scoot A321neo configuration (236 seats, SIA Group)"
+A178,Airbus,A350-1000,64.75,73.78,Gate 22,1118H,1318H,303,135,67,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A264,Airbus,A321NEO,35.80,44.51,Gate 15,2224H,0024H,236,141,33,"Scoot A321neo configuration (236 seats, SIA Group)"
+A5,Airbus,A380-800,79.75,72.72,Gate 6,1729H,1929H,471,320,91,SIA A380-800 cabin configuration (471 seats)
+A99,Boeing,B777-9,71.80,76.70,Gate 28,0156H,0356H,264,220,4,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A243,Airbus,A321NEO,35.80,44.51,Gate 15,0904H,1104H,236,199,21,"Scoot A321neo configuration (236 seats, SIA Group)"
+A257,Airbus,A321NEO,35.80,44.51,Gate 38,0730H,0930H,236,176,7,"Scoot A321neo configuration (236 seats, SIA Group)"
+A167,Airbus,A350-1000,64.75,73.78,Gate 33,1420H,1620H,303,179,96,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A75,Boeing,B777-9,71.80,76.70,Gate 30,1852H,2052H,264,190,17,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A284,Airbus,A321NEO,35.80,44.51,Gate 18,2334H,0134H,236,170,4,"Scoot A321neo configuration (236 seats, SIA Group)"
+A13,Airbus,A380-800,79.75,72.72,Gate 1,0340H,0540H,471,360,61,SIA A380-800 cabin configuration (471 seats)
+A221,Boeing,B737 MAX,35.90,39.52,Gate 24,1848H,2048H,189,133,13,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A79,Boeing,B777-9,71.80,76.70,Gate 29,1927H,2127H,264,170,67,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A132,Airbus,A350-1000,64.75,73.78,Gate 26,1852H,2052H,303,230,58,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A24,Airbus,A380-800,79.75,72.72,Gate 9,1254H,1454H,471,380,74,SIA A380-800 cabin configuration (471 seats)
+A282,Airbus,A321NEO,35.80,44.51,Gate 12,0959H,1159H,236,122,41,"Scoot A321neo configuration (236 seats, SIA Group)"
+A80,Boeing,B777-9,71.80,76.70,Gate 30,1825H,2025H,264,185,48,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A232,Boeing,B737 MAX,35.90,39.52,Gate 17,0441H,0641H,189,114,48,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A153,Airbus,A350-1000,64.75,73.78,Gate 31,2046H,2246H,303,255,24,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A237,Boeing,B737 MAX,35.90,39.52,Gate 27,0808H,1008H,189,89,32,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A191,Boeing,B737 MAX,35.90,39.52,Gate 11,0809H,1009H,189,141,8,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A20,Airbus,A380-800,79.75,72.72,Gate 3,0748H,0948H,471,375,85,SIA A380-800 cabin configuration (471 seats)
+A22,Airbus,A380-800,79.75,72.72,Gate 6,1612H,1812H,471,319,107,SIA A380-800 cabin configuration (471 seats)
+A296,Airbus,A321NEO,35.80,44.51,Gate 13,1927H,2127H,236,152,14,"Scoot A321neo configuration (236 seats, SIA Group)"
+A193,Boeing,B737 MAX,35.90,39.52,Gate 31,0244H,0444H,189,181,1,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A207,Boeing,B737 MAX,35.90,39.52,Gate 25,0848H,1048H,189,123,20,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A17,Airbus,A380-800,79.75,72.72,Gate 4,0914H,1114H,471,365,21,SIA A380-800 cabin configuration (471 seats)
+A64,Boeing,B777-9,71.80,76.70,Gate 33,0252H,0452H,264,134,52,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A68,Boeing,B777-9,71.80,76.70,Gate 21,0303H,0503H,264,158,66,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A127,Airbus,A350-1000,64.75,73.78,Gate 40,0144H,0344H,303,263,0,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A247,Airbus,A321NEO,35.80,44.51,Gate 36,0956H,1156H,236,125,40,"Scoot A321neo configuration (236 seats, SIA Group)"
+A149,Airbus,A350-1000,64.75,73.78,Gate 11,0218H,0418H,303,157,45,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A297,Airbus,A321NEO,35.80,44.51,Gate 16,0153H,0353H,236,183,13,"Scoot A321neo configuration (236 seats, SIA Group)"
+A1,Airbus,A380-800,79.75,72.72,Gate 2,1026H,1226H,471,253,41,SIA A380-800 cabin configuration (471 seats)
+A208,Boeing,B737 MAX,35.90,39.52,Gate 36,0951H,1151H,189,101,33,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A285,Airbus,A321NEO,35.80,44.51,Gate 33,2330H,0130H,236,159,21,"Scoot A321neo configuration (236 seats, SIA Group)"
+A182,Boeing,B737 MAX,35.90,39.52,Gate 23,2038H,2238H,189,137,11,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A235,Boeing,B737 MAX,35.90,39.52,Gate 31,2051H,2251H,189,165,10,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A34,Airbus,A380-800,79.75,72.72,Gate 9,1409H,1609H,471,370,15,SIA A380-800 cabin configuration (471 seats)
+A272,Airbus,A321NEO,35.80,44.51,Gate 14,1236H,1436H,236,143,36,"Scoot A321neo configuration (236 seats, SIA Group)"
+A255,Airbus,A321NEO,35.80,44.51,Gate 22,0518H,0718H,236,195,22,"Scoot A321neo configuration (236 seats, SIA Group)"
+A83,Boeing,B777-9,71.80,76.70,Gate 26,1537H,1737H,264,204,22,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A90,Boeing,B777-9,71.80,76.70,Gate 13,1941H,2141H,264,135,48,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A263,Airbus,A321NEO,35.80,44.51,Gate 11,1004H,1204H,236,209,16,"Scoot A321neo configuration (236 seats, SIA Group)"
+A248,Airbus,A321NEO,35.80,44.51,Gate 40,0806H,1006H,236,157,9,"Scoot A321neo configuration (236 seats, SIA Group)"
+A236,Boeing,B737 MAX,35.90,39.52,Gate 30,0637H,0837H,189,157,10,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A61,Boeing,B777-9,71.80,76.70,Gate 34,0405H,0605H,264,176,11,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A262,Airbus,A321NEO,35.80,44.51,Gate 31,1325H,1525H,236,138,57,"Scoot A321neo configuration (236 seats, SIA Group)"
+A94,Boeing,B777-9,71.80,76.70,Gate 27,2342H,0142H,264,219,39,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A162,Airbus,A350-1000,64.75,73.78,Gate 37,1713H,1913H,303,198,2,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A253,Airbus,A321NEO,35.80,44.51,Gate 28,0527H,0727H,236,117,44,"Scoot A321neo configuration (236 seats, SIA Group)"
+A102,Boeing,B777-9,71.80,76.70,Gate 24,2233H,0033H,264,182,22,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A135,Airbus,A350-1000,64.75,73.78,Gate 31,0215H,0415H,303,282,13,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A107,Boeing,B777-9,71.80,76.70,Gate 23,0809H,1009H,264,211,34,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A266,Airbus,A321NEO,35.80,44.51,Gate 37,2245H,0045H,236,151,6,"Scoot A321neo configuration (236 seats, SIA Group)"
+A189,Boeing,B737 MAX,35.90,39.52,Gate 26,1049H,1249H,189,132,26,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A216,Boeing,B737 MAX,35.90,39.52,Gate 15,0832H,1032H,189,110,32,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A109,Boeing,B777-9,71.80,76.70,Gate 37,1215H,1415H,264,159,25,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A96,Boeing,B777-9,71.80,76.70,Gate 27,0205H,0405H,264,168,37,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A88,Boeing,B777-9,71.80,76.70,Gate 19,0431H,0631H,264,250,12,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A63,Boeing,B777-9,71.80,76.70,Gate 33,0650H,0850H,264,161,60,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A242,Airbus,A321NEO,35.80,44.51,Gate 13,2141H,2341H,236,170,57,"Scoot A321neo configuration (236 seats, SIA Group)"
+A113,Boeing,B777-9,71.80,76.70,Gate 20,0649H,0849H,264,126,58,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A159,Airbus,A350-1000,64.75,73.78,Gate 18,2223H,0023H,303,247,55,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A56,Airbus,A380-800,79.75,72.72,Gate 6,2051H,2251H,471,250,65,SIA A380-800 cabin configuration (471 seats)
+A59,Airbus,A380-800,79.75,72.72,Gate 5,0639H,0839H,471,305,16,SIA A380-800 cabin configuration (471 seats)
+A87,Boeing,B777-9,71.80,76.70,Gate 22,1902H,2102H,264,138,36,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A152,Airbus,A350-1000,64.75,73.78,Gate 21,0836H,1036H,303,258,11,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A73,Boeing,B777-9,71.80,76.70,Gate 11,1343H,1543H,264,199,28,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A51,Airbus,A380-800,79.75,72.72,Gate 4,1448H,1648H,471,405,8,SIA A380-800 cabin configuration (471 seats)
+A155,Airbus,A350-1000,64.75,73.78,Gate 13,1337H,1537H,303,188,22,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A186,Boeing,B737 MAX,35.90,39.52,Gate 20,1729H,1929H,189,161,11,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A65,Boeing,B777-9,71.80,76.70,Gate 21,0543H,0743H,264,172,44,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A270,Airbus,A321NEO,35.80,44.51,Gate 16,2144H,2344H,236,175,41,"Scoot A321neo configuration (236 seats, SIA Group)"
+A279,Airbus,A321NEO,35.80,44.51,Gate 32,0023H,0223H,236,173,2,"Scoot A321neo configuration (236 seats, SIA Group)"
+A124,Airbus,A350-1000,64.75,73.78,Gate 24,1543H,1743H,303,241,26,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A4,Airbus,A380-800,79.75,72.72,Gate 7,0229H,0429H,471,337,89,SIA A380-800 cabin configuration (471 seats)
+A171,Airbus,A350-1000,64.75,73.78,Gate 30,1339H,1539H,303,248,23,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A76,Boeing,B777-9,71.80,76.70,Gate 35,0736H,0936H,264,235,2,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A151,Airbus,A350-1000,64.75,73.78,Gate 36,2106H,2306H,303,218,5,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A23,Airbus,A380-800,79.75,72.72,Gate 10,0614H,0814H,471,361,32,SIA A380-800 cabin configuration (471 seats)
+A226,Boeing,B737 MAX,35.90,39.52,Gate 13,0746H,0946H,189,145,32,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A240,Boeing,B737 MAX,35.90,39.52,Gate 35,1002H,1202H,189,133,22,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A110,Boeing,B777-9,71.80,76.70,Gate 31,2249H,0049H,264,191,39,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A265,Airbus,A321NEO,35.80,44.51,Gate 39,1110H,1310H,236,144,57,"Scoot A321neo configuration (236 seats, SIA Group)"
+A93,Boeing,B777-9,71.80,76.70,Gate 15,1420H,1620H,264,198,52,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A172,Airbus,A350-1000,64.75,73.78,Gate 28,0144H,0344H,303,197,100,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A119,Boeing,B777-9,71.80,76.70,Gate 32,2045H,2245H,264,160,79,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A144,Airbus,A350-1000,64.75,73.78,Gate 15,0855H,1055H,303,140,71,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A206,Boeing,B737 MAX,35.90,39.52,Gate 37,0019H,0219H,189,121,59,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A97,Boeing,B777-9,71.80,76.70,Gate 31,0835H,1035H,264,181,76,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A60,Airbus,A380-800,79.75,72.72,Gate 5,0423H,0623H,471,298,25,SIA A380-800 cabin configuration (471 seats)
+A74,Boeing,B777-9,71.80,76.70,Gate 24,1802H,2002H,264,137,29,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A290,Airbus,A321NEO,35.80,44.51,Gate 34,2114H,2314H,236,164,2,"Scoot A321neo configuration (236 seats, SIA Group)"
+A26,Airbus,A380-800,79.75,72.72,Gate 5,1216H,1416H,471,332,2,SIA A380-800 cabin configuration (471 seats)
+A10,Airbus,A380-800,79.75,72.72,Gate 9,0732H,0932H,471,291,57,SIA A380-800 cabin configuration (471 seats)
+A168,Airbus,A350-1000,64.75,73.78,Gate 38,1045H,1245H,303,210,51,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A180,Airbus,A350-1000,64.75,73.78,Gate 35,0333H,0533H,303,182,25,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A219,Boeing,B737 MAX,35.90,39.52,Gate 19,1634H,1834H,189,110,9,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A298,Airbus,A321NEO,35.80,44.51,Gate 30,2021H,2221H,236,145,45,"Scoot A321neo configuration (236 seats, SIA Group)"
+A58,Airbus,A380-800,79.75,72.72,Gate 6,2224H,0024H,471,235,85,SIA A380-800 cabin configuration (471 seats)
+A89,Boeing,B777-9,71.80,76.70,Gate 12,1708H,1908H,264,150,58,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A197,Boeing,B737 MAX,35.90,39.52,Gate 32,1851H,2051H,189,91,28,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A81,Boeing,B777-9,71.80,76.70,Gate 39,0624H,0824H,264,162,5,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A196,Boeing,B737 MAX,35.90,39.52,Gate 12,0125H,0325H,189,102,19,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A273,Airbus,A321NEO,35.80,44.51,Gate 26,2112H,2312H,236,104,44,"Scoot A321neo configuration (236 seats, SIA Group)"
+A271,Airbus,A321NEO,35.80,44.51,Gate 23,2333H,0133H,236,132,24,"Scoot A321neo configuration (236 seats, SIA Group)"
+A91,Boeing,B777-9,71.80,76.70,Gate 14,1958H,2158H,264,222,40,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A163,Airbus,A350-1000,64.75,73.78,Gate 27,0904H,1104H,303,162,32,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A40,Airbus,A380-800,79.75,72.72,Gate 1,1313H,1513H,471,208,90,SIA A380-800 cabin configuration (471 seats)
+A287,Airbus,A321NEO,35.80,44.51,Gate 20,0156H,0356H,236,134,49,"Scoot A321neo configuration (236 seats, SIA Group)"
+A36,Airbus,A380-800,79.75,72.72,Gate 8,1819H,2019H,471,293,46,SIA A380-800 cabin configuration (471 seats)
+A71,Boeing,B777-9,71.80,76.70,Gate 16,2147H,2347H,264,173,48,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A27,Airbus,A380-800,79.75,72.72,Gate 3,2056H,2256H,471,382,48,SIA A380-800 cabin configuration (471 seats)
+A142,Airbus,A350-1000,64.75,73.78,Gate 35,0246H,0446H,303,218,81,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A106,Boeing,B777-9,71.80,76.70,Gate 34,1240H,1440H,264,146,69,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A134,Airbus,A350-1000,64.75,73.78,Gate 14,0921H,1121H,303,187,91,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A225,Boeing,B737 MAX,35.90,39.52,Gate 12,0848H,1048H,189,148,18,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A143,Airbus,A350-1000,64.75,73.78,Gate 12,1859H,2059H,303,219,31,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A293,Airbus,A321NEO,35.80,44.51,Gate 27,0424H,0624H,236,152,67,"Scoot A321neo configuration (236 seats, SIA Group)"
+A194,Boeing,B737 MAX,35.90,39.52,Gate 39,0512H,0712H,189,85,37,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A21,Airbus,A380-800,79.75,72.72,Gate 8,1913H,2113H,471,283,128,SIA A380-800 cabin configuration (471 seats)
+A201,Boeing,B737 MAX,35.90,39.52,Gate 11,1925H,2125H,189,100,50,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A133,Airbus,A350-1000,64.75,73.78,Gate 16,1917H,2117H,303,194,30,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A202,Boeing,B737 MAX,35.90,39.52,Gate 38,0049H,0249H,189,101,32,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A259,Airbus,A321NEO,35.80,44.51,Gate 33,0134H,0334H,236,157,33,"Scoot A321neo configuration (236 seats, SIA Group)"
+A299,Airbus,A321NEO,35.80,44.51,Gate 31,1820H,2020H,236,142,51,"Scoot A321neo configuration (236 seats, SIA Group)"
+A269,Airbus,A321NEO,35.80,44.51,Gate 37,1053H,1253H,236,188,30,"Scoot A321neo configuration (236 seats, SIA Group)"
+A15,Airbus,A380-800,79.75,72.72,Gate 5,2001H,2201H,471,225,121,SIA A380-800 cabin configuration (471 seats)
+A188,Boeing,B737 MAX,35.90,39.52,Gate 35,2121H,2321H,189,96,45,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A47,Airbus,A380-800,79.75,72.72,Gate 8,2153H,2353H,471,206,111,SIA A380-800 cabin configuration (471 seats)
+A187,Boeing,B737 MAX,35.90,39.52,Gate 17,2356H,0156H,189,133,50,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A161,Airbus,A350-1000,64.75,73.78,Gate 23,1701H,1901H,303,202,29,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A195,Boeing,B737 MAX,35.90,39.52,Gate 33,0452H,0652H,189,121,10,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A141,Airbus,A350-1000,64.75,73.78,Gate 33,1008H,1208H,303,241,6,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A42,Airbus,A380-800,79.75,72.72,Gate 10,2208H,0008H,471,231,91,SIA A380-800 cabin configuration (471 seats)
+A252,Airbus,A321NEO,35.80,44.51,Gate 35,2353H,0153H,236,120,26,"Scoot A321neo configuration (236 seats, SIA Group)"
+A185,Boeing,B737 MAX,35.90,39.52,Gate 34,1235H,1435H,189,124,44,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A286,Airbus,A321NEO,35.80,44.51,Gate 29,0019H,0219H,236,131,39,"Scoot A321neo configuration (236 seats, SIA Group)"
+A44,Airbus,A380-800,79.75,72.72,Gate 9,1233H,1433H,471,205,95,SIA A380-800 cabin configuration (471 seats)
+A210,Boeing,B737 MAX,35.90,39.52,Gate 25,0819H,1019H,189,111,22,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A18,Airbus,A380-800,79.75,72.72,Gate 5,0748H,0948H,471,247,67,SIA A380-800 cabin configuration (471 seats)
+A256,Airbus,A321NEO,35.80,44.51,Gate 24,1144H,1344H,236,123,50,"Scoot A321neo configuration (236 seats, SIA Group)"
+A261,Airbus,A321NEO,35.80,44.51,Gate 39,1519H,1719H,236,217,6,"Scoot A321neo configuration (236 seats, SIA Group)"
+A212,Boeing,B737 MAX,35.90,39.52,Gate 14,0731H,0931H,189,125,20,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A7,Airbus,A380-800,79.75,72.72,Gate 8,0707H,0907H,471,314,106,SIA A380-800 cabin configuration (471 seats)
+A37,Airbus,A380-800,79.75,72.72,Gate 4,1119H,1319H,471,427,11,SIA A380-800 cabin configuration (471 seats)
+A136,Airbus,A350-1000,64.75,73.78,Gate 19,0500H,0700H,303,232,11,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A241,Airbus,A321NEO,35.80,44.51,Gate 28,1538H,1738H,236,155,6,"Scoot A321neo configuration (236 seats, SIA Group)"
+A84,Boeing,B777-9,71.80,76.70,Gate 17,1500H,1700H,264,164,57,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A274,Airbus,A321NEO,35.80,44.51,Gate 18,1232H,1432H,236,179,33,"Scoot A321neo configuration (236 seats, SIA Group)"
+A9,Airbus,A380-800,79.75,72.72,Gate 4,1614H,1814H,471,294,142,SIA A380-800 cabin configuration (471 seats)
+A220,Boeing,B737 MAX,35.90,39.52,Gate 26,1402H,1602H,189,138,29,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A3,Airbus,A380-800,79.75,72.72,Gate 4,1249H,1449H,471,399,48,SIA A380-800 cabin configuration (471 seats)
+A223,Boeing,B737 MAX,35.90,39.52,Gate 14,0932H,1132H,189,131,6,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A291,Airbus,A321NEO,35.80,44.51,Gate 27,0046H,0246H,236,163,20,"Scoot A321neo configuration (236 seats, SIA Group)"
+A258,Airbus,A321NEO,35.80,44.51,Gate 35,1710H,1910H,236,164,25,"Scoot A321neo configuration (236 seats, SIA Group)"
+A177,Airbus,A350-1000,64.75,73.78,Gate 22,0822H,1022H,303,210,52,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A267,Airbus,A321NEO,35.80,44.51,Gate 12,1051H,1251H,236,151,54,"Scoot A321neo configuration (236 seats, SIA Group)"
+A125,Airbus,A350-1000,64.75,73.78,Gate 36,1753H,1953H,303,278,7,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A209,Boeing,B737 MAX,35.90,39.52,Gate 29,2259H,0059H,189,159,17,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A147,Airbus,A350-1000,64.75,73.78,Gate 39,1537H,1737H,303,188,60,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A200,Boeing,B737 MAX,35.90,39.52,Gate 40,0649H,0849H,189,113,35,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A39,Airbus,A380-800,79.75,72.72,Gate 6,1224H,1424H,471,347,51,SIA A380-800 cabin configuration (471 seats)
+A131,Airbus,A350-1000,64.75,73.78,Gate 40,1650H,1850H,303,196,9,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A86,Boeing,B777-9,71.80,76.70,Gate 32,2210H,0010H,264,130,68,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A214,Boeing,B737 MAX,35.90,39.52,Gate 29,1714H,1914H,189,104,20,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A67,Boeing,B777-9,71.80,76.70,Gate 29,0823H,1023H,264,160,55,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A217,Boeing,B737 MAX,35.90,39.52,Gate 32,1153H,1353H,189,113,33,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A28,Airbus,A380-800,79.75,72.72,Gate 10,0810H,1010H,471,328,137,SIA A380-800 cabin configuration (471 seats)
+A294,Airbus,A321NEO,35.80,44.51,Gate 29,2316H,0116H,236,132,14,"Scoot A321neo configuration (236 seats, SIA Group)"
+A19,Airbus,A380-800,79.75,72.72,Gate 3,0241H,0441H,471,285,33,SIA A380-800 cabin configuration (471 seats)
+A211,Boeing,B737 MAX,35.90,39.52,Gate 18,1811H,2011H,189,104,45,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A54,Airbus,A380-800,79.75,72.72,Gate 3,1252H,1452H,471,197,100,SIA A380-800 cabin configuration (471 seats)
+A138,Airbus,A350-1000,64.75,73.78,Gate 29,0759H,0959H,303,155,46,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A169,Airbus,A350-1000,64.75,73.78,Gate 18,0754H,0954H,303,191,102,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A183,Boeing,B737 MAX,35.90,39.52,Gate 16,1209H,1409H,189,158,26,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A300,Airbus,A321NEO,35.80,44.51,Gate 14,0900H,1100H,236,165,65,"Scoot A321neo configuration (236 seats, SIA Group)"
+A205,Boeing,B737 MAX,35.90,39.52,Gate 15,1900H,2100H,189,152,36,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A140,Airbus,A350-1000,64.75,73.78,Gate 14,2044H,2244H,303,223,48,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A234,Boeing,B737 MAX,35.90,39.52,Gate 23,1600H,1800H,189,93,38,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A33,Airbus,A380-800,79.75,72.72,Gate 3,2135H,2335H,471,264,139,SIA A380-800 cabin configuration (471 seats)
+A45,Airbus,A380-800,79.75,72.72,Gate 7,0359H,0559H,471,298,108,SIA A380-800 cabin configuration (471 seats)
+A117,Boeing,B777-9,71.80,76.70,Gate 36,1907H,2107H,264,158,51,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A62,Boeing,B777-9,71.80,76.70,Gate 18,1851H,2051H,264,195,31,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A156,Airbus,A350-1000,64.75,73.78,Gate 32,0534H,0734H,303,195,14,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A14,Airbus,A380-800,79.75,72.72,Gate 10,1934H,2134H,471,353,23,SIA A380-800 cabin configuration (471 seats)
+A251,Airbus,A321NEO,35.80,44.51,Gate 20,0043H,0243H,236,168,0,"Scoot A321neo configuration (236 seats, SIA Group)"
+A105,Boeing,B777-9,71.80,76.70,Gate 40,0645H,0845H,264,122,57,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A276,Airbus,A321NEO,35.80,44.51,Gate 17,1153H,1353H,236,227,6,"Scoot A321neo configuration (236 seats, SIA Group)"
+A158,Airbus,A350-1000,64.75,73.78,Gate 32,2108H,2308H,303,231,0,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A184,Boeing,B737 MAX,35.90,39.52,Gate 19,0023H,0223H,189,146,35,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A6,Airbus,A380-800,79.75,72.72,Gate 9,0123H,0323H,471,229,64,SIA A380-800 cabin configuration (471 seats)
+A246,Airbus,A321NEO,35.80,44.51,Gate 19,1958H,2158H,236,160,25,"Scoot A321neo configuration (236 seats, SIA Group)"
+A118,Boeing,B777-9,71.80,76.70,Gate 12,1140H,1340H,264,186,25,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A283,Airbus,A321NEO,35.80,44.51,Gate 19,1618H,1818H,236,102,53,"Scoot A321neo configuration (236 seats, SIA Group)"
+A100,Boeing,B777-9,71.80,76.70,Gate 20,0323H,0523H,264,189,32,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A277,Airbus,A321NEO,35.80,44.51,Gate 34,0550H,0750H,236,145,29,"Scoot A321neo configuration (236 seats, SIA Group)"
+A170,Airbus,A350-1000,64.75,73.78,Gate 37,1145H,1345H,303,252,20,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A145,Airbus,A350-1000,64.75,73.78,Gate 34,1352H,1552H,303,222,21,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A2,Airbus,A380-800,79.75,72.72,Gate 9,0815H,1015H,471,281,48,SIA A380-800 cabin configuration (471 seats)
+A181,Boeing,B737 MAX,35.90,39.52,Gate 39,0854H,1054H,189,114,23,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A174,Airbus,A350-1000,64.75,73.78,Gate 16,0731H,0931H,303,195,93,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A92,Boeing,B777-9,71.80,76.70,Gate 23,0151H,0351H,264,181,11,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A48,Airbus,A380-800,79.75,72.72,Gate 1,0835H,1035H,471,313,14,SIA A380-800 cabin configuration (471 seats)
+A198,Boeing,B737 MAX,35.90,39.52,Gate 22,0827H,1027H,189,168,2,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A85,Boeing,B777-9,71.80,76.70,Gate 25,2134H,2334H,264,205,19,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A120,Boeing,B777-9,71.80,76.70,Gate 15,1109H,1309H,264,203,51,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A126,Airbus,A350-1000,64.75,73.78,Gate 17,0150H,0350H,303,275,10,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A95,Boeing,B777-9,71.80,76.70,Gate 19,0510H,0710H,264,134,51,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A35,Airbus,A380-800,79.75,72.72,Gate 3,1642H,1842H,471,248,101,SIA A380-800 cabin configuration (471 seats)
+A199,Boeing,B737 MAX,35.90,39.52,Gate 30,2305H,0105H,189,115,58,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A254,Airbus,A321NEO,35.80,44.51,Gate 21,2118H,2318H,236,151,23,"Scoot A321neo configuration (236 seats, SIA Group)"
+A233,Boeing,B737 MAX,35.90,39.52,Gate 20,0954H,1154H,189,154,8,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A166,Airbus,A350-1000,64.75,73.78,Gate 34,2337H,0137H,303,178,63,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A25,Airbus,A380-800,79.75,72.72,Gate 2,2254H,0054H,471,274,40,SIA A380-800 cabin configuration (471 seats)
+A239,Boeing,B737 MAX,35.90,39.52,Gate 36,2353H,0153H,189,106,24,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A249,Airbus,A321NEO,35.80,44.51,Gate 38,1450H,1650H,236,203,16,"Scoot A321neo configuration (236 seats, SIA Group)"
+A275,Airbus,A321NEO,35.80,44.51,Gate 17,0316H,0516H,236,155,37,"Scoot A321neo configuration (236 seats, SIA Group)"
+A121,Airbus,A350-1000,64.75,73.78,Gate 30,0559H,0759H,303,249,1,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A70,Boeing,B777-9,71.80,76.70,Gate 40,0829H,1029H,264,180,4,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A111,Boeing,B777-9,71.80,76.70,Gate 16,2341H,0141H,264,203,38,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A157,Airbus,A350-1000,64.75,73.78,Gate 25,0228H,0428H,303,137,52,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A192,Boeing,B737 MAX,35.90,39.52,Gate 27,1014H,1214H,189,134,43,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A280,Airbus,A321NEO,35.80,44.51,Gate 21,2223H,0023H,236,186,17,"Scoot A321neo configuration (236 seats, SIA Group)"
+A103,Boeing,B777-9,71.80,76.70,Gate 17,0214H,0414H,264,166,23,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A115,Boeing,B777-9,71.80,76.70,Gate 18,0754H,0954H,264,155,12,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A114,Boeing,B777-9,71.80,76.70,Gate 14,1010H,1210H,264,155,36,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A11,Airbus,A380-800,79.75,72.72,Gate 7,2132H,2332H,471,327,62,SIA A380-800 cabin configuration (471 seats)
+A101,Boeing,B777-9,71.80,76.70,Gate 38,0003H,0203H,264,185,45,Proxy: SIA B777-300ER configuration (264 seats); exact B777-9 capacity unavailable
+A204,Boeing,B737 MAX,35.90,39.52,Gate 22,1421H,1621H,189,140,0,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A148,Airbus,A350-1000,64.75,73.78,Gate 21,0716H,0916H,303,221,41,Proxy: SIA A350-900 303-seat configuration; exact A350-1000 capacity unavailable
+A50,Airbus,A380-800,79.75,72.72,Gate 8,0129H,0329H,471,273,82,SIA A380-800 cabin configuration (471 seats)
+A227,Boeing,B737 MAX,35.90,39.52,Gate 28,1314H,1514H,189,94,35,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A53,Airbus,A380-800,79.75,72.72,Gate 7,0948H,1148H,471,396,47,SIA A380-800 cabin configuration (471 seats)
+A215,Boeing,B737 MAX,35.90,39.52,Gate 37,1934H,2134H,189,88,39,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
+A12,Airbus,A380-800,79.75,72.72,Gate 2,0524H,0724H,471,339,31,SIA A380-800 cabin configuration (471 seats)
+A31,Airbus,A380-800,79.75,72.72,Gate 4,1427H,1627H,471,263,129,SIA A380-800 cabin configuration (471 seats)
+A16,Airbus,A380-800,79.75,72.72,Gate 1,0106H,0306H,471,220,81,SIA A380-800 cabin configuration (471 seats)
+A218,Boeing,B737 MAX,35.90,39.52,Gate 16,0952H,1152H,189,96,45,"Scoot B737 MAX 8 configuration (189 seats, SIA Group)"
