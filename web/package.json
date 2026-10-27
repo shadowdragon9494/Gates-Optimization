@@ -1,0 +1,9 @@
+{
+  "name": "gate-logic-story",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Three.js visualization dependencies for the Gate Logic aviation AI case study",
+  "dependencies": {
+    "three": "^0.180.0"
+  }
+}

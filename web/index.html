@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101616" />
+    <meta name="description" content="An aviation gate-planning case study using scheduling data and constraint optimization." />
+    <title>Gate Logic | Aviation AI Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="importmap">
+      { "imports": { "three": "/node_modules/three/build/three.module.js" } }
+    </script>
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Gate Logic home">
+        <span class="brand-mark">G<span>/</span>A</span>
+        <span class="brand-name">GATE LOGIC <small>AVIATION SYSTEMS</small></span>
+      </a>
+      <div class="topbar-right">
+        <span class="prototype-tag"><i></i> RESEARCH PROTOTYPE</span>
+        <a class="top-link" href="#future">Future work <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <nav class="story-ribbon" aria-label="Case study sections">
+      <div class="ribbon-track" id="ribbon-track">
+        <a class="ribbon-step is-active" href="#problem"><span>01</span> THE PROBLEM</a>
+        <a class="ribbon-step" href="#constraints"><span>02</span> CONSTRAINTS</a>
+        <a class="ribbon-step" href="#method"><span>03</span> AI METHOD</a>
+        <a class="ribbon-step" href="#outcomes"><span>04</span> OUTCOMES</a>
+        <a class="ribbon-step" href="#future"><span>05</span> WHAT'S NEXT</a>
+      </div>
+      <div class="reading-progress"><span id="reading-progress"></span></div>
+    </nav>
+
+    <main id="top">
+      <section class="hero section-shell" id="problem" data-section>
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> AIRPORT OPERATIONS / CASE 001</div>
+          <h1>One gate.<br /><em>One decision.</em><br />A moving target.</h1>
+          <p class="hero-lede">Every arrival starts a clock. Every departure releases capacity. Between them: a gate that cannot serve two aircraft at once.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#constraints">Explore the system <span aria-hidden="true">↓</span></a>
+            <span class="micro-note">SYNTHETIC SCHEDULE / 300 AIRCRAFT</span>
+          </div>
+          <div class="hero-footnote"><span class="status-pulse"></span> A constraint-optimization study, not an operational dispatch tool.</div>
+        </div>
+
+        <div class="scene-column reveal">
+          <div class="scene-label"><span>LIVE SYSTEM MODEL</span><span id="scene-mode-label">BASELINE POLICY</span></div>
+          <div class="scene-frame">
+            <canvas id="airport-scene" aria-label="Interactive three-dimensional model of 40 airport gates and aircraft"></canvas>
+            <div class="scene-hud scene-hud-top"><span class="hud-dot"></span> GATE NETWORK <b>40 NODES</b></div>
+            <div class="scene-hud scene-hud-bottom"><span id="scene-gate-label">SELECT A GATE</span><span>DRAG TO ORBIT <b>·</b> SCROLL TO ZOOM</span></div>
+            <div class="scene-loading" id="scene-loading">INITIALIZING AIRFIELD MODEL...</div>
+          </div>
+          <div class="scene-legend"><span><i class="legend-dot legend-a380"></i> A380-COMPATIBLE</span><span><i class="legend-dot legend-standard"></i> STANDARD GATE</span><span><i class="legend-dot legend-aircraft"></i> AIRCRAFT IN MOTION</span></div>
+        </div>
+
+        <div class="hero-index"><span>01 / 05</span><span class="index-rule"></span><span>SCROLL TO INVESTIGATE</span></div>
+      </section>
+
+      <section class="section-shell problem-band" id="constraints" data-section>
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> 02 / THE OPERATING ENVELOPE</div>
+          <h2>Capacity is finite.<br /><em>Demand is not.</em></h2>
+          <p>Start with a deliberately compact model: one day, a fixed schedule, five aircraft types and two gate-eligibility classes.</p>
+        </div>
+        <div class="metric-grid reveal">
+          <article class="metric-cell"><span class="metric-index">01</span><strong data-count="300">300</strong><span>UNIQUE AIRCRAFT</span><small>One arrival and one departure per aircraft</small></article>
+          <article class="metric-cell"><span class="metric-index">02</span><strong data-count="40">40</strong><span>GATES IN THE MODEL</span><small>10 A380-compatible · 30 standard</small></article>
+          <article class="metric-cell"><span class="metric-index">03</span><strong data-count="2">2h</strong><span>BASE TURNAROUND</span><small>Scheduled occupancy in the base dataset</small></article>
+          <article class="metric-cell metric-alert"><span class="metric-index">04</span><strong>137</strong><span>ARRIVALS BLOCKED</span><small>45.7% in the initial assignment</small></article>
+        </div>
+        <div class="inline-callout reveal"><span class="callout-symbol">!</span><p><b>The bottleneck is temporal, not just spatial.</b> At the initial gate assignment, 137 arrivals reach an occupied gate. The count includes the schedule's assigned gates and two-hour occupancy windows, including midnight wraparound.</p></div>
+      </section>
+
+      <section class="section-shell rules-section" data-section>
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> THE RULES OF THE RUNWAY</div>
+          <h2>What the solver<br /><em>must respect.</em></h2>
+        </div>
+        <div class="rules-layout reveal">
+          <div class="rules-list">
+            <article class="rule-row"><span class="rule-number">01</span><div><h3>Compatibility</h3><p>In the baseline, A380s use gates 1–10; other aircraft use gates 11–40. The flexible scenario lets non-A380 aircraft use any gate.</p></div><span class="rule-mark">HARD</span></article>
+            <article class="rule-row"><span class="rule-number">02</span><div><h3>Exclusive occupancy</h3><p>Two aircraft with overlapping gate-service windows cannot share a gate.</p></div><span class="rule-mark">HARD</span></article>
+            <article class="rule-row"><span class="rule-number">03</span><div><h3>Time wraps at midnight</h3><p>A 23:00 arrival with a 01:00 departure occupies the gate across the day boundary.</p></div><span class="rule-mark">CYCLIC</span></article>
+            <article class="rule-row"><span class="rule-number">04</span><div><h3>Change has a cost</h3><p>First reduce same-gate overlaps; then prefer keeping aircraft at their original gates.</p></div><span class="rule-mark">OBJECTIVE</span></article>
+          </div>
+          <aside class="constraint-aside"><span class="aside-kicker">MODEL BOUNDARY</span><div class="aside-rule"></div><p>This prototype does not yet include taxi time, towing, buffer periods, passenger connection quality or real-time disruption updates.</p><span class="aside-coordinates">01-DAY CYCLE / MINUTE RESOLUTION</span></aside>
+        </div>
+      </section>
+
+      <section class="method-section" id="method" data-section>
+        <div class="section-shell method-inner">
+          <div class="method-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 03 / AI METHOD</div>
+            <h2>Turn a timetable<br />into a <em>search space.</em></h2>
+            <p>Google OR-Tools CP-SAT assigns every aircraft to an eligible gate. Overlapping flight pairs create conflict variables; the objective weights each conflict above a gate change.</p>
+            <div class="objective-box"><span>MINIMIZE</span><code>301 × conflicts + gate changes</code><small>With 300 aircraft, one fewer conflict always outweighs any possible reduction in gate changes.</small></div>
+            <p class="method-caveat">A feasible solution is not a proof of global optimality. Solver status and bounds stay visible in the outcome comparison.</p>
+          </div>
+          <div class="method-diagram reveal" aria-label="Optimization process diagram">
+            <div class="diagram-label">DECISION PIPELINE <span>CP-SAT / DISCRETE</span></div>
+            <div class="pipeline-step"><i>01</i><span>Schedule windows</span><b>300 aircraft</b></div>
+            <div class="pipeline-connector"><span></span><span></span><span></span></div>
+            <div class="pipeline-step"><i>02</i><span>Eligible gate domains</span><b>10 / 40 gates</b></div>
+            <div class="pipeline-connector"><span></span><span></span><span></span></div>
+            <div class="pipeline-step"><i>03</i><span>Overlap constraints</span><b>7,599 pairs*</b></div>
+            <div class="pipeline-connector"><span></span><span></span><span></span></div>
+            <div class="pipeline-step pipeline-output"><i>04</i><span>Feasible assignment</span><b>Conflict-minimizing</b></div>
+            <div class="diagram-footnote">* Flexible-gate scenario. Pair counts depend on gate eligibility and overlapping times.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell outcomes-section" id="outcomes" data-section>
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> 04 / WHAT THE RUNS FOUND</div>
+          <h2>Two policies.<br /><em>One measurable trade-off.</em></h2>
+          <p>Both runs use the same synthetic 300-aircraft schedule. Select a policy to inspect the assignment changes.</p>
+        </div>
+        <div class="scenario-switch reveal" role="group" aria-label="Select gate eligibility scenario">
+          <button class="scenario-button is-selected" data-scenario="baseline" aria-pressed="true"><span>SCENARIO A</span> Dedicated gate groups</button>
+          <button class="scenario-button" data-scenario="flexible" aria-pressed="false"><span>SCENARIO B</span> Share A380 gates</button>
+        </div>
+        <div class="outcome-display reveal" aria-live="polite">
+          <div class="outcome-main">
+            <div class="outcome-topline"><span id="outcome-title">DEDICATED GATE GROUPS</span><span class="feasible-badge"><i></i> FEASIBLE / NOT PROVEN OPTIMAL</span></div>
+            <div class="conflict-comparison"><div class="before-number"><span>INITIAL CONFLICTS</span><strong>172</strong></div><div class="comparison-arrow">→</div><div class="after-number"><span>AFTER CP-SAT</span><strong id="optimized-conflicts">7</strong></div><div class="delta-chip" id="conflict-reduction">−96%</div></div>
+            <div class="result-track"><span id="result-track-fill"></span></div>
+            <div class="result-scale"><span>0 CONFLICTS</span><span>172 INITIAL</span></div>
+          </div>
+          <div class="outcome-side">
+            <div><span>AIRCRAFT REASSIGNED</span><strong id="moved-count">135 <small>/ 300</small></strong></div>
+            <div><span>OVERLAPPING PAIRS</span><strong id="pair-count">5,208</strong></div>
+            <div><span>PEAK-DEMAND LOWER BOUND</span><strong id="lower-bound">6 <small>conflicts</small></strong></div>
+          </div>
+        </div>
+        <div class="scenario-note reveal" id="scenario-note">With 10 A380-only gates and 30 standard gates, the solver reduced the initial same-gate conflicts to 7. A simple peak-demand bound is 6; the remaining gap and FEASIBLE status mean optimality is not established.</div>
+        <div class="outcome-foot reveal"><span class="tiny-square"></span> In the flexible run, 18 non-A380 aircraft were assigned to A380-compatible gates. The 130 gate changes and 6 conflicts are a feasible result, not a proven optimum.</div>
+      </section>
+
+      <section class="section-shell data-section" data-section>
+        <div class="data-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> INPUTS / ASSUMPTIONS</div><h2>Useful signal.<br /><em>Prototype data.</em></h2></div><p>Schedule, passenger mix and capacity fields demonstrate the workflow. They should not be mistaken for airline operational data.</p></div>
+        <div class="data-columns reveal">
+          <article class="data-column"><span class="data-tag">01 / SCHEDULE</span><h3>300 synthetic aircraft</h3><p>Five aircraft types, 40 gate assignments, scheduled landings and departures. Base turnaround is two hours.</p><div class="data-bar"><span style="width:100%"></span></div><small>FULL COHORT</small></article>
+          <article class="data-column"><span class="data-tag">02 / PASSENGER MIX</span><h3>OD + TT &lt; seat limit</h3><p>Passenger counts are randomized for demonstration. Capacity uses SIA layouts where available and labeled fleet proxies elsewhere.</p><div class="data-bar"><span style="width:68%"></span></div><small>SYNTHETIC LOAD FACTOR</small></article>
+          <article class="data-column"><span class="data-tag">03 / TIME MODEL</span><h3>Minute-level occupancy</h3><p>Gate occupancy includes midnight wraparound. Operational buffers and turnaround variation remain future model inputs.</p><div class="data-bar"><span style="width:52%"></span></div><small>SIMPLIFIED SERVICE WINDOW</small></article>
+        </div>
+      </section>
+
+      <section class="future-section" id="future" data-section>
+        <div class="section-shell future-inner">
+          <div class="future-heading reveal">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 05 / BEYOND THIS PROTOTYPE</div>
+            <h2>The next experiment<br />is <em>the comparison.</em></h2>
+            <p>One solver run is a starting point. The next phase should test quality, runtime and resilience on richer, validated operational data.</p>
+          </div>
+          <div class="future-grid reveal">
+            <article class="future-card"><span class="future-index">A</span><span class="future-label">SEARCH STRATEGIES</span><h3>Metaheuristics</h3><p>Compare CP-SAT with tabu search, simulated annealing and genetic algorithms across schedule size and disruption levels.</p><div class="future-metric">QUALITY / RUNTIME / STABILITY</div></article>
+            <article class="future-card"><span class="future-index">B</span><span class="future-label">PHYSICS-INFORMED MODELS</span><h3>Large physics models</h3><p>Explore physics-informed or large-scale operational models for richer turnaround, taxi and resource interactions. Treat these as complementary approaches, not a drop-in solver replacement.</p><div class="future-metric">REALISM / CALIBRATION / DATA</div></article>
+            <article class="future-card"><span class="future-index">C</span><span class="future-label">OPERATIONAL READINESS</span><h3>Stress-test the inputs</h3><p>Add validated fleet layouts, passenger connections, baggage cut-offs, buffers, gate closures and live delay scenarios.</p><div class="future-metric">VALIDATION / ROBUSTNESS / SAFETY</div></article>
+          </div>
+          <div class="prototype-caveat reveal"><span class="caveat-mark">!</span><p><b>Prototype caveat.</b> This page summarizes a synthetic scheduling exercise. The solver returned feasible assignments within a time limit; neither result proves a global optimum. Capacity proxies and simplified operational constraints require validation before any real-world use.</p></div>
+          <footer class="page-footer"><span>GATE LOGIC <i>·</i> AVIATION AI STUDY</span><span>DECISION SUPPORT, NOT AUTOPILOT</span><a href="#top">BACK TO TOP ↑</a></footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
