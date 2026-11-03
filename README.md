@@ -2,14 +2,19 @@
 [![test](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml/badge.svg)](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml)
 ## Introduction
 
-This is a pet project by Tyler Lee (https://www.linkedin.com/in/tylerlee96548932/) which utilizes his aviation and AI knowledge to create a LLM fronted CP-SAT solver which aims to address airport gate assignment optimization.
+This is a pet project by Tyler Lee (https://www.linkedin.com/in/tylerlee96548932/) which utilizes his aviation and AI knowledge to create a LLM fronted CP-SAT solver which aims to address airport gate assignment problems. I am a Technical Program Manager for emerging technologies in Aviation, Space and AI Programs. Bringing technologies from discovery to deployment and translating the products to real world impact.
 
-Note: This pet project started as a hobby so the it is constantly a work in progress as I add more components and features to it. Vibe coding notice! The Webpage development is done through vibe coding with guidance.
+Note: This pet project started as a hobby so the it is constantly a work in progress as I add more components and features to it. Vibe coding notice! The Webpage development is done through vibe coding as my java and HTML knowledge is only at surface (enough to understand only), kindly verify before actual deployment. A part of the python code consists of some data science. This was done by me to ensure that the dummy data I have created is robust enough and that it mirrors real world constraint. Some numbers were artificially altered to ensure that the problem exists, please exercise discretion. 
 
 ## Context
 
-Aviation is never short of problems. The good innovation and safety record that we have is never by chance. Being a long term strategist in aviation, there are many problems that I want to solve.
+Aviation is never short of problems. The good innovation and safety record that we have is never by chance. Being a long term strategist in aviation, there are many problems that I want to solve. With the advent of technologies, I have come to realize I could prototype some of them myself and this motivated me to create the first digital product that I have built on top of other things like drones, gliders, 3D printed turbines, robotics etc. Having worked in one of the best airports in the world, we are always asking ourselves how can things be better. There are many issues/questions that we can address but we need to be grounded in reality and not try to solve a problem so big that it would take decades. With projects like these, I aim to create a simple POC to try to articulate aviation problems. AI uptake in aviation is slow and I attribute it to two things (not knowing enough about aviation - a highly matrixed, webbed, complex and most regulated industry) and (the bar to safety is high). So, in my projects, I hope to spur interest for individuals about AI for aviation (we are no strangers to ML but it's time for aviation to try to embrace AI).
 
+## Purpose
+Why is the gate assignment a problem?
+- Gates in an airport is a physical resource that is always constrained, it is something costly to build and maintain and more importantly can't be trivally expanded. There are lot of intricacies to balance these gates assignment and their usage. The aviation ecosystem is a highly matrix web of complex systems and operations. If unplanned, the constraints and chokepoints shifts around (between airport, airlines, ANSPs) and impact the greater ecosystem (both on departure side and arrival side). 
+
+This project works off commercial or dummy data with appropriate schemas as conceived by me. 
 ## Purpose
 Why is the gate assignment a problem?
 - Gates in an airport is a physical resource that is always constrained, it is something costly to build and maintain and more importantly can't be trivally expanded. There are lot of intricacies that go into assigning gates, such as aircraft type, passenger connections, and operational constraints.
