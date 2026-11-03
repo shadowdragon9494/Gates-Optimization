@@ -1,5 +1,5 @@
 # Gates-Optimization
-[![test](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/tests.yml/badge.svg)](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml)
+[![test](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml/badge.svg)](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml)
 ## Introduction
 
 This is a pet project by Tyler Lee (https://www.linkedin.com/in/tylerlee96548932/) which utilizes his aviation and AI knowledge to create a LLM fronted CP-SAT solver which aims to address airport gate assignment problems. I am a Technical Program Manager for emerging technologies in Aviation, Space and AI Programs. Bringing technologies from discovery to deployment and translating the products to real world impact.
