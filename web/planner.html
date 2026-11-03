@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101a19">
+  <title>Gate Logic | Planning workspace</title>
+  <link rel="stylesheet" href="/planner.css">
+  <script src="/planner.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">G<span>/</span>A <strong>GATE LOGIC<small>PLANNING WORKSPACE</small></strong></a><span class="tag">SYNTHETIC DATA · RESEARCH PROTOTYPE</span></header>
+  <main>
+    <section class="intro"><div class="eyebrow">AIRPORT OPERATIONS / SCENARIO LAB</div><h1>A clearer plan.<br><em>One conversation away.</em></h1><p>Explore gate assignments in plain English, then watch the solver’s plan unfold across the day.</p></section>
+    <div class="workspace">
+      <!-- --- Chat interface for natural-language scenario controls --- -->
+      <section class="panel chat-panel" aria-labelledby="chat-heading">
+        <div class="panel-head"><h2 id="chat-heading">Planning assistant</h2><button id="reset" class="quiet">New conversation</button></div>
+        <div id="chat" role="log" aria-live="polite"><div class="message assistant">Ask me to optimise a schedule or compare gate policies. I’ll show the original conflicts before the CP-SAT reassignment. Try “Optimise the base scenario with 3 wing-to-wing connections.”</div></div>
+        <div class="suggestions"><button data-prompt="Optimise the default schedule using separate gate groups.">Optimise baseline ↗</button><button data-prompt="Compare separate and flexible gate policies on the realistic schedule.">Compare policies ↗</button></div>
+        <form id="chat-form"><label class="sr-only" for="message">Your planning request</label><textarea id="message" rows="3" maxlength="4000" placeholder="What if standard aircraft could use A380 gates?" required></textarea><button class="primary" id="send" type="submit">Send request <span>↗</span></button></form>
+        <p id="connection" class="note" role="status">Checking assistant connection…</p>
+      </section>
+      <!-- --- Direct solver controls, before/after metrics, and gate playback --- -->
+      <section class="panel airfield" aria-labelledby="airfield-heading">
+        <div class="panel-head"><h2 id="airfield-heading">Airfield playback</h2><span id="plan-status" class="tag">AWAITING A PLAN</span></div>
+        <div class="preview-controls">
+          <label id="dataset-field" class="explained-field" data-tooltip="Default: the general-purpose synthetic flight schedule used by the prototype.">Schedule <span class="help-mark" aria-hidden="true">?</span><select id="dataset" aria-describedby="dataset-help"><option value="default" title="General-purpose synthetic schedule">Default</option><option value="ideal" title="Conflict-free synthetic starting schedule">Ideal</option><option value="realistic" title="Congested synthetic schedule with overlapping occupancy">Realistic</option></select></label>
+          <span id="dataset-help" class="sr-only">Default: the general-purpose synthetic flight schedule used by the prototype.</span>
+          <label>Aircraft <input id="aircraft-count" type="number" min="1" max="300" value="300" required></label>
+          <label>Gates <input id="gate-count" type="number" min="1" max="40" value="40" required></label>
+          <label>Locked (%) <input id="lock-percentage" type="number" min="0" max="100" value="5" required></label>
+          <label>Connections <input id="connections" type="number" min="0" max="1000000" value="0" required></label>
+          <label>Solver limit (seconds) <input id="time-limit" type="number" min="1" max="60" value="10" required></label>
+          <label>Handling rate
+            <select id="handling-rate">
+              <option value="">Default: 2 hours</option>
+              <option value="2">2 min/passenger</option>
+              <option value="3">3 min/passenger</option>
+              <option value="4">4 min/passenger</option>
+              <option value="5">5 min/passenger</option>
+            </select>
+          </label>
+          <label class="checkbox"><input type="checkbox" id="flexible"> Flexible gates</label>
+          <button id="preview" class="quiet">Run solver preview</button>
+        </div>
+        <div id="solver-progress" class="solver-progress" role="status" aria-live="polite" aria-hidden="true">
+          <span id="solver-progress-label">Planning request in progress…</span>
+          <progress aria-label="Solver is running"></progress>
+        </div>
+        <p class="note">Defaults: 300 aircraft, 40 gates, 5% locked, 0 connections, and 2-hour handling. A selected handling rate uses passenger count × minutes per passenger. Preview runs the solver directly; chat also accepts aircraft/model-specific handling rates.</p>
+        <div class="result-select"><label for="scenario">Result</label><select id="scenario" disabled><option>No results yet</option></select><button id="download" class="quiet" disabled>Download JSON ↓</button></div>
+        <div id="metrics" class="metrics" aria-live="polite"><div><strong>—</strong><span>Conflict pairs</span></div><div><strong>—</strong><span>Aircraft moved</span></div><div><strong>—</strong><span>Conflicts removed</span></div><div><strong>—</strong><span>Connections fulfilled</span></div></div>
+        <div class="playback"><button id="play" class="quiet" disabled>Play</button><label class="sr-only" for="clock">Time of day</label><input type="range" id="clock" min="0" max="1439" value="360" disabled><output id="time" for="clock">06:00</output><label id="view-field" class="explained-field view-field" data-tooltip="After CP-SAT: gate assignments returned by the solver for the selected scenario.">View <span class="help-mark" aria-hidden="true">?</span><select id="view" aria-describedby="view-help"><option value="optimized_gate" title="Gate assignments after CP-SAT">After CP-SAT</option><option value="original_gate" title="Original schedule before CP-SAT">Before CP-SAT</option></select></label><span id="view-help" class="sr-only">After CP-SAT: gate assignments returned by the solver for the selected scenario.</span></div>
+        <div class="legend"><span><i class="compatible"></i>A380-compatible</span><span><i class="occupied"></i>Occupied</span><span><i class="conflict"></i>Conflict</span></div>
+        <div class="airfield-scroll"><div id="gate-grid" class="gate-grid" aria-label="40 gates with aircraft present at the selected time"></div></div>
+        <p id="flight-detail" class="note" aria-live="polite">Choose a gate to inspect its aircraft at the selected time.</p>
+        <p id="result-note" class="note">Animation uses actual assignment and occupancy times returned by the solver.</p>
+      </section>
+    </div>
+    <p class="footer-note">Model: fixed arrivals; gate occupancy uses 2-hour default handling or selected passenger-based rates. CP-SAT prioritises zero overlapping gate conflicts, then consecutive-gate connections, then fewer moves. Hover over a conflicted gate for its unresolved reason. Transfer itineraries, baggage, delay and closure constraints are not modelled.</p>
+  </main>
+</body>
+</html>
