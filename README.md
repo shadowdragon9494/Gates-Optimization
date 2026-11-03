@@ -2,46 +2,46 @@
 [![test](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml/badge.svg)](https://github.com/shadowdragon9494/Gates-Optimization/actions/workflows/test.yml)
 ## Introduction
 
-This is a pet project by Tyler Lee (https://www.linkedin.com/in/tylerlee96548932/) which utilizes his aviation and AI knowledge to create a LLM fronted CP-SAT solver which aims to address airport gate assignment problems. I am a Technical Program Manager for emerging technologies in Aviation, Space and AI Programs. Bringing technologies from discovery to deployment and translating the products to real world impact.
+This is a pet project by Tyler Lee (https://www.linkedin.com/in/tylerlee96548932/) which utilizes his aviation and AI knowledge to create a LLM fronted CP-SAT solver which aims to address airport gate assignment optimization.
 
-Note: This pet project started as a hobby so the it is constantly a work in progress as I add more components and features to it. Vibe coding notice! The Webpage development is done through vibe coding as my java and HTML knowledge is only at surface (enough to understand only), kindly verify before actual deployment. A part of the python code consists of some data science. This was done by me to ensure that the dummy data I have created is robust enough and that it mirrors real world constraint. Some numbers were artificially altered to ensure that the problem exists, please exercise discretion. 
+Note: This pet project started as a hobby so the it is constantly a work in progress as I add more components and features to it. Vibe coding notice! The Webpage development is done through vibe coding with guidance.
 
 ## Context
 
-Aviation is never short of problems. The good innovation and safety record that we have is never by chance. Being a long term strategist in aviation, there are many problems that I want to solve. With the advent of technologies, I have come to realize I could prototype some of them myself and this motivated me to create the first digital product that I have built on top of other things like drones, gliders, 3D printed turbines, robotics etc. Having worked in one of the best airports in the world, we are always asking ourselves how can things be better. There are many issues/questions that we can address but we need to be grounded in reality and not try to solve a problem so big that it would take decades. With projects like these, I aim to create a simple POC to try to articulate aviation problems. AI uptake in aviation is slow and I attribute it to two things (not knowing enough about aviation - a highly matrixed, webbed, complex and most regulated industry) and (the bar to safety is high). So, in my projects, I hope to spur interest for individuals about AI for aviation (we are no strangers to ML but it's time for aviation to try to embrace AI).
+Aviation is never short of problems. The good innovation and safety record that we have is never by chance. Being a long term strategist in aviation, there are many problems that I want to solve.
 
 ## Purpose
 Why is the gate assignment a problem?
-- Gates in an airport is a physical resource that is always constrained, it is something costly to build and maintain and more importantly can't be trivally expanded. There are lot of intricacies to balance these gates assignment and their usage. The aviation ecosystem is a highly matrix web of complex systems and operations. If unplanned, the constraints and chokepoints shifts around (between airport, airlines, ANSPs) and impact the greater ecosystem (both on departure side and arrival side). 
+- Gates in an airport is a physical resource that is always constrained, it is something costly to build and maintain and more importantly can't be trivally expanded. There are lot of intricacies that go into assigning gates, such as aircraft type, passenger connections, and operational constraints.
 
-This project works off commercial or dummy data with appropriate schemas as conceived by me. 
+This project works off commercial or dummy data with appropriate schemas as conceived by me.
 
 ## Constraints, Scenarios, Assumptions and Models
 
 The key thing about addressing an aviation use case is to establish the right correlations between variables. We need to establish a few params that are contributory to the analysis.
 
-### Assumptions 
-Broad assumptions were made and the problem was contextualized to be focused on airport instead of the broader eco-system. The problem considers the following as definitions (not quite how ICAO would define) arrival timing in this case is defined as aircraft's time of arrival to the gate. Assumes no taxi timing from runway to gate. We also assume no delays from aircraft arrival and that every arrival reaches at the time that they are intended to. Departure also assumes the same. Airspace and ground handling constraints are not part of this evaluation. Terminal Efficiency, Airside Efficiency and Facilities Utilization rates are all not considered in this example, though in real life there are a lot more correlations between these metrics. We also do not consider finer metrics and differences in things like 'in-block time' and 'off-block time' or even terminal congestion metrics. 
+### Assumptions
+Broad assumptions were made and the problem was contextualized to be focused on airport instead of the broader eco-system. The problem considers the following as definitions (not quite how ICAO would define them).
 
 The experimentation here is airlines agnostic and not mapped after any airport.
 
 ### Constraints and Data Correlations
-There would be a base scenario that we will have as a default and params will be made available for the LLM to input. 
+There would be a base scenario that we will have as a default and params will be made available for the LLM to input.
 
-As a baseline we have 300 aircraft on schedule using 40 gates across 24 hours. Each aircraft has a random number of passengers onboard that is mixed between departure/arrival and transit passengers. Proxies are used for aircraft capacities and we only have 5 aircraft types in the simulation (1 aircraft type for Code F gates as per ICAO definition and 4 aircraft types of varying capacities). 
+As a baseline we have 300 aircraft on schedule using 40 gates across 24 hours. Each aircraft has a random number of passengers onboard that is mixed between departure/arrival and transit passengers.
 
 1. Aircraft Type
    - It affects aircraft gate assignment between Code F gates and other gates.
    - Aircraft type has an impact on the ground handling time. In the base scenario we set as 2 hours flat.
-    
+
 2. Operational Constraint
-   - The simulated aerodrome assumes all arriving aircraft must and will depart after the ground handling time has elapsed. 
+   - The simulated aerodrome assumes all arriving aircraft must and will depart after the ground handling time has elapsed.
    - Base scenario would assume the preceding statement but it will be kept as a variable for the LLM to fill.
    - Estimated Landing Time is assumed to be fixed in all scenarios. So the only moving part is gate assignments.
-   
-3. Rigid vs Flexible Gates 
-   - Original vs Optimised Scenario. In original, every aircraft needs to use their assigned gates. In optimised, the CP-SAT solver is use to shift gate assignments. 
-  
+
+3. Rigid vs Flexible Gates
+   - Original vs Optimised Scenario. In original, every aircraft needs to use their assigned gates. In optimised, the CP-SAT solver is used to shift gate assignments.
+
 4. Passengers and Commercial Complication
    - Wing to Wing connections are not considered in base scenario, assumed to be zero. LLM will allow this to be a variable.
    - Certain aircraft at random will be assigned a lock at random, those aircraft will definitely use those gates.
@@ -49,8 +49,8 @@ As a baseline we have 300 aircraft on schedule using 40 gates across 24 hours. E
 (Stretched scenario)
 * To consider aircraft groups where they need to be assigned in close proximity to facilitate transfers.
 
-### Models 
-CP-SAT by Google is one of the famous and promising open source models that is capable of modelling physics and mathematical constraints. The original intention was to do a CNN to correlate the parameters but the code run times were very long so I decided against it at this point. Especially with an LLM frontage, each permutation could take up to 10 minutes of compute time (based on my own home PC set-up). Barring more powerful processing capability, as part of future work, I would love to build a PINNs. 
+### Models
+CP-SAT by Google is one of the famous and promising open source models that is capable of modelling physics and mathematical constraints. The original intention was to do a CNN to correlate the parameters.
 
 ## Run the planning website
 
@@ -63,7 +63,7 @@ python -m pip install -r requirements.txt
 python server.py --prompt-key
 ```
 
-Open **http://127.0.0.1:8080/**. You can also launch with `python "LLM API.py"`.
+Open **http://127.0.0.1:8080/**.
 Enter your API key at the hidden terminal prompt each time you start the server.
 It stays in the running Python process and is not saved in source code, files,
 or your shell history. Press Enter without a key for solver preview only.
@@ -169,5 +169,3 @@ OpenAI integration follows the official
 ## Future work
 - LLM evaluations, prompt caching and building a vectorDB for past queries to reduce token consumptions.
 - Alternative solvers like Neural networks or PINNs.
-
-
