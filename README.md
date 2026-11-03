@@ -111,7 +111,7 @@ The LLM and direct preview can set aircraft count (1–300), gate count (1–40)
 wing-to-wing connection count (default 0), and gate-lock percentage (default 5%).
 Locks fix randomly selected aircraft at their original gates. A request above
 80% locked aircraft returns the original schedule without running CP-SAT.
-Passenger counts are OD + TT from `dummy_passenger_movement.csv`. A global,
+Passenger counts are a mix of departure/arrival and transit passengers from `dummy_passenger_movement.csv`. A global,
 aircraft-model, or aircraft-specific handling rate can be set from 2–5 minutes
 per passenger; aircraft-specific rates take precedence over model rates, which
 take precedence over the global rate. The default 120-minute handling time is
